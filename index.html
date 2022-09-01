@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>How to make validation in JavaScript - TheSkillStock</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 m-3 pt-3">
+        <div class="card">
+          <div class="card-header text-center bg-info">Form Validation In JavaScript</div>
+          <div class="card-body">
+            <form action="#" onsubmit="return validation()" class="bg-light">
+              <div class="form-group mb-3">
+                <label for="name" class="font-weight-regular">Enter Your Name </label><br>
+                <span id="Name" class="text-danger font-weight-regular"> </span>
+                <input type="text" name="name" class="form-control" id="name" />
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="font-weight-regular">Enter Your Email </label><br>
+                <span id="emailids" class="text-danger font-weight-regular"> </span>
+                <input type="text" name="email" class="form-control" id="emails" />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="user" class="font-weight-regular">Enter Your Username </label><br>
+                <span id="username" class="text-danger font-weight-regular"> </span>
+                <input type="text" name="user" class="form-control" id="user" />
+              </div>
+
+              <div class="form-group">
+                <label class="font-weight-regular">Enter Your Password </label><br>
+                <span id="passwords" class="text-danger font-weight-regular"></span>
+                <input type="password" name="pass" class="form-control" id="pass"/>
+              </div>
+
+              <div class="form-group">
+                <label class="font-weight-regular">Enter Your Password Again </label><br>
+                <span id="confrmpass" class="text-danger font-weight-regular"></span>
+                <input type="password" name="conpass" class="form-control" id="conpass"/>
+              </div>
+
+              <div class="form-group">
+                <label class="font-weight-regular">Enter Your Mobile Number </label><br>
+                <span id="mobileno" class="text-danger font-weight-regular"> </span>
+                <input type="text" name="mobile" class="form-control" id="mobileNumber"/>
+              </div>
+
+              <input type="submit" name="submit" value="Submit" class="btn btn-info form-control"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
